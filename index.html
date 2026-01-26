@@ -17,7 +17,6 @@
         :root {
             --primary-blue: #0E4D92; 
             --secondary-blue: #0b3c73;
-            /* Silver Button Gradient */
             --silver-gradient: linear-gradient(135deg, #E0E0E0 0%, #F5F7FA 50%, #B0B8C0 100%);
             --silver-hover: linear-gradient(135deg, #ffffff 0%, #e6e6e6 100%);
             
@@ -82,7 +81,6 @@
         /* HERO SECTION */
         .hero { 
             min-height: 100vh; display: flex; align-items: center; 
-            /* Fallback color if image doesn't load */
             background-color: var(--primary-blue);
             background-image: linear-gradient(135deg, rgba(14, 77, 146, 0.9), rgba(5, 30, 60, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop'); 
             background-size: cover; background-position: center; background-attachment: fixed;
@@ -123,58 +121,34 @@
         .feature-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
         .feature-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; color: var(--primary-blue); }
 
+        /* CONTACT ICONS STYLE (NEW) */
+        .contact-row { display: flex; align-items: center; margin-bottom: 15px; }
+        .contact-row i { font-size: 1.2rem; width: 30px; color: var(--primary-blue); }
+        .social-icons-row { display: flex; gap: 15px; margin-top: 5px; }
+        .social-icon { font-size: 1.5rem; transition: transform 0.2s; }
+        .social-icon:hover { transform: scale(1.1); }
+
         /* FORMS */
         form { background:#fff; padding:30px; border-radius:16px; box-shadow: var(--shadow-card); }
         input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; }
         
-        /* WHATSAPP */
+        /* WHATSAPP FLOAT */
         .whatsapp-float { 
             position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; 
             background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; 
             box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 9999;
-            text-decoration: none;
-            transition: transform 0.3s;
+            text-decoration: none; transition: transform 0.3s;
         }
         .whatsapp-float:hover { transform: scale(1.1); }
 
-        /* Facebook */
+        /* FACEBOOK FLOAT */
         .facebook-float { 
-            position: fixed; 
-            bottom: 110px; /* สูงขึ้นมา 80px จาก WhatsApp */
-            right: 30px; 
-            width: 60px; 
-            height: 60px; 
-            background: #1877F2; 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4); 
-            z-index: 9999;
-            text-decoration: none;
-            transition: transform 0.3s;
+            position: fixed; bottom: 110px; right: 30px; width: 60px; height: 60px; 
+            background: #1877F2; border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+            box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4); z-index: 9999;
+            text-decoration: none; transition: transform 0.3s;
         }
         .facebook-float:hover { transform: scale(1.1); }
-
-        /* --- ส่วนที่เพิ่ม Viber (NEW) --- */
-        .viber-float { 
-            position: fixed; 
-            bottom: 190px; /* สูงขึ้นมา 80px จาก Facebook */
-            right: 30px; 
-            width: 60px; 
-            height: 60px; 
-            background: #7360f2; /* สีม่วง Viber */
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            box-shadow: 0 10px 25px rgba(115, 96, 242, 0.4); 
-            z-index: 9999;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-        .viber-float:hover { transform: scale(1.1); }
-        /* -------------------------------- */
 
         footer { background: var(--text-dark); color: #fff; padding: 40px 0; font-size: 0.9rem; }
 
@@ -300,10 +274,35 @@
                     <div class="contact-info">
                         <h2>Ready to start?</h2>
                         <p style="color:var(--text-dark);">Contact us for a preliminary assessment.</p>
+                        
                         <div style="margin-top: 40px;">
-                            <p><i class="fa-solid fa-location-dot" style="color:var(--primary-blue); margin-right:10px;"></i> Bangkok, Thailand</p>
-                            <p><i class="fa-brands fa-whatsapp" style="color:var(--primary-blue); margin-right:10px;"></i> +66 92 156 3555</p>
-                            <p><i class="fa-regular fa-envelope" style="color:var(--primary-blue); margin-right:10px;"></i> info@taoglobalservices.com</p>
+                            <div class="contact-row">
+                                <i class="fa-solid fa-location-dot"></i> 
+                                <span>Bangkok, Thailand</span>
+                            </div>
+
+                            <div class="contact-row" style="align-items: flex-start;">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <span style="font-weight:600; font-size:1.1rem; display:block; margin-bottom:5px;">+66 92 156 3555</span>
+                                    <div class="social-icons-row">
+                                        <a href="https://wa.me/66921563555" target="_blank" style="text-decoration:none;">
+                                            <i class="fa-brands fa-whatsapp social-icon" style="color:#25D366; width:auto;"></i>
+                                        </a>
+                                        <a href="https://line.me/ti/p/~0921563555" target="_blank" style="text-decoration:none;">
+                                            <i class="fa-brands fa-line social-icon" style="color:#06C755; width:auto;"></i>
+                                        </a>
+                                        <a href="viber://chat?number=66921563555" target="_blank" style="text-decoration:none;">
+                                            <i class="fa-brands fa-viber social-icon" style="color:#7360f2; width:auto;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <i class="fa-regular fa-envelope"></i> 
+                                <span>info@taoglobalservices.com</span>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -334,10 +333,6 @@
         <i class="fa-brands fa-facebook-f" style="color:white; font-size: 30px;"></i>
     </a>
     
-    <a href="viber://chat?number=66921563555" class="viber-float" target="_blank">
-        <i class="fa-brands fa-viber" style="color:white; font-size: 30px;"></i>
-    </a>
-
     <script>
         // Simple Header Shrink
         window.addEventListener('scroll', function() {
