@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>Tao Global Services | Thailand Sourcing & Export Agent (Eggs, Solar, Medical)</title>
-    <meta name="description" content="Premier sourcing and export partner in Thailand led by Atthapol Rattanajuntra. Specializing in Fresh Eggs, Solar Energy Solutions, and Medical Supplies. One-stop service for QC and Logistics.">
-    <meta name="keywords" content="Thailand Sourcing Agent, Egg Export Thailand, Solar Energy Thailand, Medical Supplies Sourcing, Tao Global Services, Procurement Agent Bangkok">
-    <meta name="author" content="Atthapol Rattanajuntra (Tao)">
+    <title>Tao Global Services | Professional Thailand Sourcing & Procurement</title>
+    <meta name="description" content="Your dedicated sourcing partner in Thailand. We handle factory verification, quality control (QC), and export logistics. Global standards, local expertise.">
     
     <link rel="canonical" href="https://www.taoglobalservices.com/" />
     <link rel="icon" type="image/png" href="logotab.png">
@@ -15,28 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Tao Global Services Co., Ltd.",
-      "image": "https://www.taoglobalservices.com/logo.png",
-      "telephone": "+66921563555",
-      "email": "info@taoglobalservices.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bangkok",
-        "addressCountry": "TH"
-      },
-      "url": "https://www.taoglobalservices.com/",
-      "priceRange": "$$"
-    }
-    </script>
-
     <style>
         :root {
             --primary-blue: #0E4D92; 
             --secondary-blue: #0b3c73;
+            /* Silver Button Gradient */
             --silver-gradient: linear-gradient(135deg, #E0E0E0 0%, #F5F7FA 50%, #B0B8C0 100%);
             --silver-hover: linear-gradient(135deg, #ffffff 0%, #e6e6e6 100%);
             
@@ -83,6 +64,7 @@
         header.scrolled { padding: 10px 0; }
         header .container { display: flex; justify-content: space-between; align-items: center; }
         
+        /* LOGO STYLING */
         .logo { display: block; height: 60px; text-decoration: none; color: var(--primary-blue); font-weight: 700; font-size: 1.2rem;} 
         .logo img { height: 100%; width: auto; display: block; }
         header.scrolled .logo img { height: 45px; }
@@ -100,6 +82,7 @@
         /* HERO SECTION */
         .hero { 
             min-height: 100vh; display: flex; align-items: center; 
+            /* Fallback color if image doesn't load */
             background-color: var(--primary-blue);
             background-image: linear-gradient(135deg, rgba(14, 77, 146, 0.9), rgba(5, 30, 60, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop'); 
             background-size: cover; background-position: center; background-attachment: fixed;
@@ -140,45 +123,58 @@
         .feature-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
         .feature-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; color: var(--primary-blue); }
 
-        /* INDUSTRIES BADGES */
-        .industry-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px; }
-        .tag { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 8px 20px; border-radius: 20px; font-size: 0.9rem; }
-
         /* FORMS */
         form { background:#fff; padding:30px; border-radius:16px; box-shadow: var(--shadow-card); }
         input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; }
         
-        /* --- FLOATING BUTTONS CSS --- */
-        
-        /* 1. WhatsApp (Bottom) */
+        /* WHATSAPP */
         .whatsapp-float { 
             position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; 
             background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; 
             box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 9999;
-            text-decoration: none; transition: transform 0.3s;
+            text-decoration: none;
+            transition: transform 0.3s;
         }
         .whatsapp-float:hover { transform: scale(1.1); }
 
-        /* 2. Facebook (Middle) */
+        /* Facebook */
         .facebook-float { 
-            position: fixed; bottom: 110px; right: 30px; width: 60px; height: 60px; 
-            background: #1877F2; border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-            box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4); z-index: 9999;
-            text-decoration: none; transition: transform 0.3s;
+            position: fixed; 
+            bottom: 110px; /* สูงขึ้นมา 80px จาก WhatsApp */
+            right: 30px; 
+            width: 60px; 
+            height: 60px; 
+            background: #1877F2; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4); 
+            z-index: 9999;
+            text-decoration: none;
+            transition: transform 0.3s;
         }
         .facebook-float:hover { transform: scale(1.1); }
 
-        /* 3. Viber (Top) - NEW! */
+        /* --- ส่วนที่เพิ่ม Viber (NEW) --- */
         .viber-float { 
-            position: fixed; bottom: 190px; right: 30px; width: 60px; height: 60px; 
-            background: #7360f2; /* Viber Purple */
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-            box-shadow: 0 10px 25px rgba(115, 96, 242, 0.4); z-index: 9999;
-            text-decoration: none; transition: transform 0.3s;
+            position: fixed; 
+            bottom: 190px; /* สูงขึ้นมา 80px จาก Facebook */
+            right: 30px; 
+            width: 60px; 
+            height: 60px; 
+            background: #7360f2; /* สีม่วง Viber */
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 10px 25px rgba(115, 96, 242, 0.4); 
+            z-index: 9999;
+            text-decoration: none;
+            transition: transform 0.3s;
         }
         .viber-float:hover { transform: scale(1.1); }
-        
-        /* ---------------------------- */
+        /* -------------------------------- */
 
         footer { background: var(--text-dark); color: #fff; padding: 40px 0; font-size: 0.9rem; }
 
@@ -212,8 +208,8 @@
 
             <nav class="nav-menu" id="nav-menu">
                 <a href="#about">About</a>
-                <a href="#specialization">Expertise</a>
                 <a href="#process">Process</a>
+                <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -222,56 +218,14 @@
     <main>
         <section id="about" class="hero">
             <div class="container">
-                <span class="highlight-text">Trust • Transparency • Efficiency</span>
+                <span class="highlight-text">Your success is our #1 priority</span>
                 
-                <h1>Your Sourcing Partner in Thailand</h1>
-                
-                <div class="industry-tags">
-                    <span class="tag"><i class="fa-solid fa-egg"></i> Fresh Eggs & Powder</span>
-                    <span class="tag"><i class="fa-solid fa-solar-panel"></i> Solar Energy</span>
-                    <span class="tag"><i class="fa-solid fa-suitcase-medical"></i> Medical Supplies</span>
-                </div>
-
+                <h1>Dedicated Partner for <br> Personalized Sourcing in Thailand</h1>
                 <p>
-                    Led by <strong>Atthapol (Tao) Rattanajuntra</strong>, we navigate the complexities of local Thai manufacturing. 
-                    From verified supplier sourcing to export logistics, we ensure your business growth.
+                    Your trusted eyes and ears in Thailand. We navigate the complexities of local sourcing with transparency and precision, allowing you to focus on what matters most—your business growth.
                 </p>
-                
                 <div style="margin-top: 40px;">
-                    <a href="#contact" class="btn btn-silver">Get a Quote</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="specialization" class="section bg-light">
-            <div class="container">
-                <div class="text-center" style="margin-bottom: 50px;">
-                    <h2>Specialized Industries</h2>
-                    <p>We don't just "find anything". We have deep expertise in specific Thai export sectors.</p>
-                </div>
-
-                <div class="grid-2">
-                    <div class="expertise-card">
-                        <i class="fa-solid fa-egg"></i>
-                        <h3 class="text-center">Food & Agriculture</h3>
-                        <p class="text-center" style="font-size:0.9rem;">Exporting to Maldives & Middle East</p>
-                        <ul class="feature-list">
-                            <li><strong>Fresh Eggs:</strong> Sourcing from GMP/HACCP certified farms.</li>
-                            <li><strong>Egg Powder:</strong> Whole, yolk, or white powder for industrial use.</li>
-                            <li><strong>Halal Certified:</strong> Meeting strict export requirements.</li>
-                        </ul>
-                    </div>
-
-                    <div class="expertise-card">
-                        <i class="fa-solid fa-bolt"></i>
-                        <h3 class="text-center">Energy & Industrial</h3>
-                        <p class="text-center" style="font-size:0.9rem;">Sustainable Solutions</p>
-                        <ul class="feature-list">
-                            <li><strong>Solar Systems:</strong> Panels, inverters, and battery storage sourcing.</li>
-                            <li><strong>Medical Supplies:</strong> Consumables and hospital-grade equipment.</li>
-                            <li><strong>Factory Verification:</strong> We check the factory before you pay.</li>
-                        </ul>
-                    </div>
+                    <a href="#contact" class="btn btn-silver">Get Started</a>
                 </div>
             </div>
         </section>
@@ -284,29 +238,63 @@
                 <div class="timeline-grid">
                     <div class="step">
                         <div class="step-num">1</div>
-                        <h3>Consultation</h3>
-                        <p>We define your specs (e.g., egg size, solar capacity) and target pricing.</p>
+                        <h3>Consultation & Specification</h3>
+                        <p>We define your ideal product. From technical specs to target pricing, we align our search with your business goals.</p>
                     </div>
                     <div class="step">
                         <div class="step-num">2</div>
-                        <h3>Sourcing & Audit</h3>
-                        <p>We verify manufacturers onsite to ensure they exist and meet standards.</p>
+                        <h3>Strategic Sourcing</h3>
+                        <p>We don't just find suppliers; we benchmark them to find your competitive advantage in the Thai market.</p>
                     </div>
                     <div class="step">
                         <div class="step-num">3</div>
-                        <h3>Quality (QC)</h3>
-                        <p>Pre-shipment inspection to guarantee quality before goods leave Thailand.</p>
+                        <h3>Quality Assurance (QC)</h3>
+                        <p>Rigorous quality control at the source. We perform on-site audits to guarantee standards before shipping.</p>
                     </div>
                     <div class="step">
                         <div class="step-num">4</div>
-                        <h3>Export Logistics</h3>
-                        <p>Handling customs documentation, shipping, and delivery to your port.</p>
+                        <h3>Logistics & Delivery</h3>
+                        <p>Smooth transit from factory to your doorstep. We manage documents and customs for a seamless experience.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section bg-light">
+        <section id="services" class="section bg-light">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <h2>Core Expertise</h2>
+                    <p style="font-size:1.1rem; color: var(--primary-blue); font-weight:600;">Global Standards, Local Knowledge</p>
+                    <p style="max-width: 800px; margin: 20px auto;">
+                        At Tao Global Services, we bridge the gap between international expectations and local manufacturing realities.
+                    </p>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="expertise-card">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h3 class="text-center">1. Global Standards</h3>
+                        <ul class="feature-list">
+                            <li><strong>Rigorous QC:</strong> International inspection standards (AQL).</li>
+                            <li><strong>Professional Communication:</strong> Clear updates in English/Thai.</li>
+                            <li><strong>Ethical Sourcing:</strong> Prioritizing fair labor and safety.</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3 class="text-center">2. Local Knowledge</h3>
+                        <ul class="feature-list">
+                            <li><strong>Supplier Network:</strong> Vetted database of manufacturers.</li>
+                            <li><strong>On-Site Visits:</strong> Face-to-face negotiations.</li>
+                            <li><strong>Cultural Navigation:</strong> Bypassing local delays.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
             <div class="container">
                 <div class="grid-2">
                     <div class="contact-info">
@@ -315,7 +303,6 @@
                         <div style="margin-top: 40px;">
                             <p><i class="fa-solid fa-location-dot" style="color:var(--primary-blue); margin-right:10px;"></i> Bangkok, Thailand</p>
                             <p><i class="fa-brands fa-whatsapp" style="color:var(--primary-blue); margin-right:10px;"></i> +66 92 156 3555</p>
-                            <p><i class="fa-brands fa-viber" style="color:var(--primary-blue); margin-right:10px;"></i> +66 92 156 3555</p>
                             <p><i class="fa-regular fa-envelope" style="color:var(--primary-blue); margin-right:10px;"></i> info@taoglobalservices.com</p>
                         </div>
                     </div>
@@ -324,7 +311,7 @@
                             <h3 style="margin-bottom:20px;">Send a Message</h3>
                             <input type="text" name="name" placeholder="Full Name" required>
                             <input type="email" name="email" placeholder="Email Address" required>
-                            <textarea name="message" rows="5" placeholder="I am looking for... (e.g., Fresh Eggs, Solar Panels)" required></textarea>
+                            <textarea name="message" rows="5" placeholder="Project Details..." required></textarea>
                             <button type="submit" class="btn btn-silver" style="width:100%; border:1px solid #ccc;">Send Request</button>
                         </form>
                     </div>
@@ -347,7 +334,7 @@
         <i class="fa-brands fa-facebook-f" style="color:white; font-size: 30px;"></i>
     </a>
     
-    <a href="viber://chat?number=%2B66921563555" class="viber-float" target="_blank">
+    <a href="viber://chat?number=66921563555" class="viber-float" target="_blank">
         <i class="fa-brands fa-viber" style="color:white; font-size: 30px;"></i>
     </a>
 
