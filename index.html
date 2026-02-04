@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>Tao Global Services | Professional Thailand Sourcing & Procurement</title>
-    <meta name="description" content="Your dedicated sourcing partner in Thailand. We handle factory verification, quality control (QC), and export logistics. Global standards, local expertise.">
+    <title>Tao Global Services | Thailand Sourcing & Procurement Partner</title>
+    <meta name="description" content="Thailand-based sourcing agent providing factory verification, QC inspection, supplier management, and export coordination for international buyers.">
     
     <meta property="og:site_name" content="Tao Global Services" />
 
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        /* DESIGN SYSTEM (Kept the Professional Blue Theme) */
         :root {
             --primary-blue: #0E4D92; 
             --secondary-blue: #0b3c73;
@@ -52,7 +53,7 @@
 
         /* Typography */
         h1, h2, h3 { color: var(--primary-blue); font-weight: 700; line-height: 1.2; }
-        h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); text-transform: uppercase; letter-spacing: -1px; }
+        h1 { font-size: clamp(2.0rem, 5vw, 3.5rem); text-transform: uppercase; letter-spacing: -1px; }
         h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 20px; position: relative; display: inline-block; }
         h2::after { content: ''; display: block; width: 60%; height: 4px; background: var(--silver-gradient); margin: 15px auto 0; border-radius: 2px; }
         p { color: var(--text-gray); margin-bottom: 15px; }
@@ -75,7 +76,6 @@
         header.scrolled { padding: 10px 0; }
         header .container { display: flex; justify-content: space-between; align-items: center; }
         
-        /* LOGO STYLING */
         .logo { display: block; height: 60px; text-decoration: none; color: var(--primary-blue); font-weight: 700; font-size: 1.2rem;} 
         .logo img { height: 100%; width: auto; display: block; }
         header.scrolled .logo img { height: 45px; }
@@ -100,7 +100,7 @@
             padding-top: 80px;
         }
         .hero h1 { color: #FFFFFF !important; text-shadow: 0 4px 15px rgba(0,0,0,0.3); margin-bottom: 20px; }
-        .hero p { color: rgba(255,255,255,0.95); font-size: 1.15rem; font-weight: 300; max-width: 800px; margin: 0 auto 30px; }
+        .hero p { color: rgba(255,255,255,0.95); font-size: 1.15rem; font-weight: 300; max-width: 900px; margin: 0 auto 30px; line-height: 1.8; }
 
         /* BUTTONS */
         .btn { 
@@ -116,21 +116,14 @@
         .btn-silver:hover { transform: translateY(-3px); background: var(--silver-hover); }
 
         /* GRID & CARDS */
-        .timeline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .step { background: #fff; padding: 40px 25px; border-radius: 16px; box-shadow: var(--shadow-card); position: relative; }
-        .step-num { 
-            width: 50px; height: 50px; background: var(--primary-blue); color: #fff; 
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-            font-weight: 700; font-size: 1.2rem; margin: 0 auto 20px;
-        }
-
-        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
-        .expertise-card { padding: 40px; border-radius: 16px; background: #fff; box-shadow: var(--shadow-card); border-bottom: 4px solid transparent; transition: 0.3s; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .expertise-card { padding: 40px; border-radius: 16px; background: #fff; box-shadow: var(--shadow-card); border-bottom: 4px solid transparent; transition: 0.3s; height: 100%; }
         .expertise-card:hover { border-bottom-color: var(--primary-blue); transform: translateY(-5px); }
-        .expertise-card i { font-size: 3rem; color: var(--primary-blue); margin-bottom: 25px; display: block; text-align: center; }
+        .expertise-card i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 25px; display: block; text-align: center; }
+        .expertise-card h3 { text-align: center; margin-bottom: 20px; font-size: 1.3rem; }
         
-        .feature-list { list-style: none; margin-top: 20px; text-align: left; }
-        .feature-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
+        .feature-list { list-style: none; margin-top: 10px; text-align: left; }
+        .feature-list li { margin-bottom: 12px; padding-left: 25px; position: relative; font-size: 0.95rem; }
         .feature-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; color: var(--primary-blue); }
 
         /* CONTACT ICONS STYLE */
@@ -194,7 +187,6 @@
 
             <nav class="nav-menu" id="nav-menu">
                 <a href="#about">About</a>
-                <a href="#process">Process</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -204,44 +196,19 @@
     <main>
         <section id="about" class="hero">
             <div class="container">
-                <span class="highlight-text">Your success is our #1 priority</span>
+                <span class="highlight-text">On-the-ground sourcing support</span>
                 
-                <h1>Dedicated Partner for <br> Personalized Sourcing in Thailand</h1>
+                <h1>Your On-the-Ground <br> Sourcing Partner in Thailand</h1>
+                
                 <p>
-                    Your trusted eyes and ears in Thailand. We navigate the complexities of local sourcing with transparency and precision, allowing you to focus on what matters most—your business growth.
+                    Factory-verified sourcing, on-site quality control, and supplier management — handled locally to protect international buyers from costly mistakes.
                 </p>
-                <div style="margin-top: 40px;">
-                    <a href="#contact" class="btn btn-silver">Get Started</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="process" class="section">
-            <div class="container text-center">
-                <h2>Seamless Sourcing Journey</h2>
-                <p>Our 4-step framework ensures your success from inquiry to delivery.</p>
+                <p>
+                    We represent your interests in Thailand by working directly with factories, inspecting production before shipment, and managing suppliers on your behalf.
+                </p>
                 
-                <div class="timeline-grid">
-                    <div class="step">
-                        <div class="step-num">1</div>
-                        <h3>Consultation & Specification</h3>
-                        <p>We define your ideal product. From technical specs to target pricing, we align our search with your business goals.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">2</div>
-                        <h3>Strategic Sourcing</h3>
-                        <p>We don't just find suppliers; we benchmark them to find your competitive advantage in the Thai market.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">3</div>
-                        <h3>Quality Assurance (QC)</h3>
-                        <p>Rigorous quality control at the source. We perform on-site audits to guarantee standards before shipping.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">4</div>
-                        <h3>Logistics & Delivery</h3>
-                        <p>Smooth transit from factory to your doorstep. We manage documents and customs for a seamless experience.</p>
-                    </div>
+                <div style="margin-top: 40px;">
+                    <a href="#contact" class="btn btn-silver">Request a Supplier Assessment</a>
                 </div>
             </div>
         </section>
@@ -249,31 +216,48 @@
         <section id="services" class="section bg-light">
             <div class="container">
                 <div class="text-center" style="margin-bottom: 60px;">
-                    <h2>Core Expertise</h2>
-                    <p style="font-size:1.1rem; color: var(--primary-blue); font-weight:600;">Where Global Standards Become Local Advantage</p>
-                    <p style="max-width: 800px; margin: 20px auto;">
-                        Tao Global Services translates international expectations into reliable local production—reducing risk, protecting margins, and accelerating deals
-                    </p>
+                    <h2>Thailand Sourcing & Procurement Services</h2>
+                    <p style="font-size:1.1rem; color: var(--primary-blue); font-weight:600;">Hands-on sourcing support for international buyers</p>
                 </div>
                 
                 <div class="grid-2">
                     <div class="expertise-card">
-                        <i class="fa-solid fa-earth-americas"></i>
-                        <h3 class="text-center">1. Global Standards</h3>
+                        <i class="fa-solid fa-industry"></i>
+                        <h3>Factory Sourcing & Verification</h3>
                         <ul class="feature-list">
-                            <li><strong>Rigorous QC:</strong> International inspection standards (AQL).</li>
-                            <li><strong>Professional Communication:</strong> Clear updates in English/Thai.</li>
-                            <li><strong>Ethical Sourcing:</strong> Prioritizing fair labor and safety.</li>
+                            <li>Factory shortlisting & benchmarking</li>
+                            <li>On-site verification</li>
+                            <li>Capability & license checks</li>
                         </ul>
                     </div>
 
                     <div class="expertise-card">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h3 class="text-center">2. Local Knowledge</h3>
+                        <i class="fa-solid fa-magnifying-glass-check"></i>
+                        <h3>Quality Control & Inspection</h3>
                         <ul class="feature-list">
-                            <li><strong>Supplier Network:</strong> Vetted database of manufacturers.</li>
-                            <li><strong>On-Site Visits:</strong> Face-to-face negotiations.</li>
-                            <li><strong>Cultural Navigation:</strong> Bypassing local delays.</li>
+                            <li>Pre-shipment inspection (AQL)</li>
+                            <li>Photo & written QC reports</li>
+                            <li>Corrective action follow-up</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-card">
+                        <i class="fa-solid fa-comments"></i>
+                        <h3>Supplier Management</h3>
+                        <ul class="feature-list">
+                            <li>English–Thai communication</li>
+                            <li>Sample & production tracking</li>
+                            <li>Dispute & delay handling</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h3>Export & Logistics Support</h3>
+                        <ul class="feature-list">
+                            <li>Export document coordination</li>
+                            <li>Packing & labeling checks</li>
+                            <li>Freight forwarder liaison</li>
                         </ul>
                     </div>
                 </div>
